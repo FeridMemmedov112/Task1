@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
-.nav{
-    position: absolute;
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #2f343a;
+    min-height: 100vh;
+} 
+
+.nav{    
     width: 100%;
-    height: 45px;
+    height: 44px;
     background-color: #c8a35f;
     left: 0;
     top: 0%;
@@ -29,7 +35,6 @@
 }
 
 .nav p{
-    position: absolute;
     font-family: 'Segoe UI';
     font-style: normal;
     font-weight: normal;
@@ -52,12 +57,12 @@
 }
 
 .menu{
-    padding-top: 50px;
+    
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 120px;
+    height: 70px;
     background-color: #393f47;
 }
 
@@ -84,21 +89,24 @@
 }
 
 .yuk{
+    background-size: cover;
     background-image: url(./img/kamaz.png);
     width: 100%;
-    height: 620px;
-    left: 0;
-    top: 145px;
+     height: 620px; 
+    background-position: center;
 }
 
 .melumat{
-    width: 920px;
+    position: relative;
+    width: 500px;
     height: 245px;
-    margin-left: 300px;
+    margin-left: 450px;
+    margin-top: 150px;
     border: 1px solid #c8a35f;
 }
 
 .melumat h1{
+    padding-top: 80px;
     font-family: 'Segoe UI';
     text-align: center;
     color: #fff;
@@ -124,7 +132,7 @@
 
 .melumat1{
     height: 561px;
-    width: 555px;
+    width: 500px;
     background-color: #393f47;
     display: flex;
     flex-direction: column;
@@ -132,18 +140,20 @@
     
 }
 .melumat1 h2{
+    position: relative;
     font-family: 'Segoe UI';
     text-transform: uppercase;
     color: #fff;
-    padding-left: 305px;
-    padding-top: 166px;
+    margin-left: 305px;
+    margin-top: 166px;
 }
 .melumat1 p{
+    position: relative;
     font-family: 'Segoe UI';
     color: #fff;
     font-size: 18px;
-    padding-left: 305px;
-    padding-top: 30px;
+    margin-left: 305px;
+    margin-top: 30px;
 }
 
 .btn{
@@ -155,33 +165,206 @@
 }
 
 .melumat1 a {
+    position: relative;
     text-decoration: none;
     font-family:  'Segoe UI';
     text-align: center;
     text-transform: uppercase;
     font-size: 16px;
     color: #fff;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .image{
-    width: 445px;
-    height: 266px;
+    object-fit: cover;
+    width: 245px;
+    height: 200px;
 }
-.hereket{
+ .hereket{
     height: 561px;
-    width: 455px;
+    width: 380px;
     background-color: #393f47;
-    display: flex;
-    flex-direction: column;
-   align-items: center;
+  
 }
 .hereket a{
+    display: flex;
+    flex-direction: column;
     font-family: 'Segoe UI';
     text-align: center;
     font-size: 16px;
     text-transform: uppercase;
     color: #c8a35f;
     text-decoration: none;
-    padding: 100px;
+     padding: 100px; 
+} 
+
+.xidmetler{
+    width: 100%;
+    height: 304px;
 }
+
+.xidmetler h2{
+   position: relative;
+   margin-left: 305px;
+   margin-top: 50px;
+   font-size: 18px; 
+   font-family: 'Segoe UI';
+   color: #fff; 
+   text-transform: uppercase;
+}
+ 
+
+
+.plane1{
+    display: flex;
+    position: relative;
+    margin-left: 305px;
+    margin-top: 30px;
+
+}
+
+.plane2{
+    display: flex;
+    position: relative;
+    margin-left: 305px;
+}
+
+.plane{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 100px;
+    border: 1px solid #2f343a;
+    background-color: #393f47;
+   
+}
+
+.plane i{
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.plane a{
+   font-size: 18px; 
+   text-align: center;
+   font-family: 'Segoe UI';
+   color: #fff;
+   text-decoration: none;
+   margin-top: 10px;
+}
+
+.plane1 :hover{
+    background-color: #c8a35f;
+}
+.plane2 :hover{
+    background-color: #c8a35f;
+}
+
+ .sirket{
+    width: 100%;
+    height: 382px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+} 
+
+.sirket h2{
+    position: relative;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 305px;
+    margin-top: 50px; 
+}
+
+.sirket p{
+    width: 245px;
+    font-family: 'Segoe UI';
+    color: #fff;
+    font-size: 18px;
+     margin-left: 305px;
+    margin-top: 30px; 
+}
+
+
+.box img{
+    width: 180px;
+    height: 100px;
+    object-fit: cover;
+}  
+
+.box1{ 
+    display: flex; 
+    margin-right: 200px;
+}
+
+.box{
+    width: 180px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.box1 h1{
+    text-align: center;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+}
+
+.box1 span{
+    text-align: center;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+}
+
+.box2{
+    display: flex;
+}
+
+.box2 h1{
+    text-align: center;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+}
+
+.box2 span{
+    text-align: center;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+}
+
+.map{
+    width: 100%;
+    height: 450px;
+    background-image: url(./img/maps.png);
+    object-fit: cover;
+}
+
+.footer{
+    height: 161px;
+    width: 100%;
+    background-color: #c8a35f;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .elaqe{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .elaqe p{
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+  }
+  
+  .elaqe a{
+    text-decoration: none;
+    color: #fff;
+    padding: 2px;
+    font-size: 14px;
+  }
